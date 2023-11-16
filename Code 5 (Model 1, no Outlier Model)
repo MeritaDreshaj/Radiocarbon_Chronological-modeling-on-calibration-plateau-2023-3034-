@@ -1,0 +1,152 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Sequence(S4)
+  {
+   Boundary("Start S4 Layer 5");
+   Phase("S4 Layer 5")
+   {
+    Sequence(S4 Column 1)
+    {
+     Boundary("Start S4 Column 1");
+     Sequence("S4 C_1")
+     {
+      R_Date("GrM-28799", 5348, 27)
+      {
+      };
+      R_Date("GrM-28292", 5348, 27)
+      {
+      };
+      R_Date("GrM-28293", 5349, 27)
+      {
+      };
+      R_Date("GrM-28833", 5330, 30)
+      {
+      };
+      R_Date("GrM-28294", 5317, 24)
+      {
+      };
+      R_Date("GrM-28800", 5380, 27)
+      {
+      };
+      Interval("S4 Column 1");
+     };
+     Boundary("End S4 Column 1");
+    };
+    Sequence(S4 Column 2)
+    {
+     Boundary("Start S4 Column 2");
+     Sequence("S4 C_2")
+     {
+      R_Date("GrM-28801", 5387, 27)
+      {
+      };
+      R_Date("GrM-28802", 5366, 27)
+      {
+      };
+      R_Date("GrM-28834", 5340, 30)
+      {
+      };
+      R_Date("GrM-28295", 5338, 16)
+      {
+      };
+      R_Date("GrM-28831", 5365, 30)
+      {
+      };
+      R_Date("GrM-28832", 5350, 30)
+      {
+      };
+      Interval("S4 Column 2");
+     };
+     Boundary("End S4 Column 2");
+    };
+    Sequence(S4 Column 3)
+    {
+     Boundary("Start S4 Column 3");
+     Sequence("S4 C_3")
+     {
+      R_Date("GrM-29667", 5307, 29)
+      {
+      };
+      R_Date("GrM-29664", 5321, 27)
+      {
+      };
+      R_Date("GrM-29665", 5327, 29)
+      {
+      };
+      R_Date("GrM-29661", 5332, 27)
+      {
+      };
+      R_Date("GrM-29659", 5306, 27)
+      {
+      };
+      Interval("S4 Column 3");
+     };
+     Boundary("End S4 Column 3");
+    };
+    Interval("S4 Layer 5");
+    Span("Span S4");
+    Sum("S4 Layer 5 Sum")
+    {
+    };
+   };
+   Boundary("End S4");
+  };
+  Sequence(S3)
+  {
+   Boundary("Start S3 Find Layer");
+   Phase("S3 Find Layer")
+   {
+    Sequence("S3 Column 1")
+    {
+     Boundary("Start S3 Column 1");
+     Sequence("S3 C_1")
+     {
+      R_Date("GrM-27308", 5247, 26)
+      {
+      };
+      R_Date("GrM-27306", 5272, 28)
+      {
+      };
+      R_Date("GrM-27300", 5213, 26)
+      {
+      };
+      R_Date("GrM-27298", 5300, 26)
+      {
+      };
+     };
+     Boundary("End S3 Column 1");
+    };
+    Sequence("S3 Column 2")
+    {
+     Boundary("Start S3 Column 2");
+     Sequence("S3 C_2")
+     {
+      R_Date("GrM-27307", 5235, 28)
+      {
+      };
+      R_Date("GrM-27304", 5326, 26)
+      {
+      };
+      R_Date("GrM-27310", 5329, 26)
+      {
+      };
+     };
+     Boundary("End S3 Column 2");
+    };
+    R_Date("GrM-27305", 5297, 26)
+    {
+    };
+    Interval(" S3 Find Layer Interval");
+    Span("Span S3 Find Layer");
+    Sum("S3 Find Layer Sum")
+    {
+    };
+   };
+   Boundary("End S3 Find Layer");
+  };
+ };
+ 
