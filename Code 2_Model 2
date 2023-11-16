@@ -1,0 +1,220 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Outlier_Model("IA",Prior("Charcoal_Plus"),U(0,3),"t");
+  Sequence(S4)
+  {
+   Boundary("Start S4 Layer 2");
+   Phase("S4 Layer 2")
+   {
+    R_Date("GrA-38188", 5230, 40)
+    {
+     Outlier("General", 0.05);
+    };
+    R_Date("GrA-38189", 5340, 45)
+    {
+     Outlier("General", 0.05);
+    };
+    Span("Span S4 Layer 2");
+    Interval("Interval S4 Layer 2");
+    Sum("Sum S4 Layer 2")
+    {
+    };
+   };
+   Boundary("End S4 Layer 2");
+   Boundary("Hiatus Layers 3 & 4");
+   Boundary("Start S4 Layer 5");
+   Phase("S4 Layer 5")
+   {
+    Sequence(S4 Column 1)
+    {
+     Boundary("Start S4 Column 1");
+     Sequence("S4 C_1")
+     {
+      R_Date("GrM-28800", 5380, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28294", 5317, 24)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28833", 5330, 30)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28293", 5349, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28292", 5348, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28799", 5348, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      Interval("S4 Column 1 Interval");
+     };
+     Boundary("End Column 1");
+    };
+    Sequence(S4 Column 2)
+    {
+     Boundary("Start S4 Column 2");
+     Sequence("S4 C_2")
+     {
+      R_Date("GrM-28832", 5350, 30)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28831", 5365, 30)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28295", 5338, 16)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28834", 5340, 30)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28802", 5366, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-28801", 5387, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      Interval("S4 Column 2 Interval");
+     };
+     Boundary("End S4 Column 2");
+    };
+    Sequence(S4 Column 3)
+    {
+     Boundary("Start S4 Column 3");
+     Sequence("S4 C_3")
+     {
+      R_Date("GrM-29659", 5306, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-29661", 5332, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-29665", 5327, 29)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-29664", 5321, 27)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-29667", 5307, 29)
+      {
+       Outlier("General", 0.05);
+      };
+      Interval("S4 Column 3 Interval");
+     };
+     Boundary("End S4 Column 3");
+    };
+    Interval("S4 Layer 5 Interval");
+    Span("Span S4 Layer 5");
+    Sum("S4 Layer 5 Sum")
+    {
+    };
+   };
+   Boundary("End S4 Layer 5");
+  };
+  Sequence(S3)
+  {
+   Boundary("Start S3 Find layer");
+   Phase("S3 Find layer")
+   {
+    Sequence("S3 Column 1")
+    {
+     Boundary("Start S3 Column 1");
+     Sequence("S3 C_1")
+     {
+      R_Date("GrM-27298", 5300, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27300", 5213, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27306", 5272, 28)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27308", 5247, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      Interval("S3 Column 1 Interval");
+     };
+     Boundary("End S3 Column 1");
+    };
+    Sequence("S3 Column 2")
+    {
+     Boundary("Start S3 Column 2");
+     Sequence("S3 C_2")
+     {
+      R_Date("GrM-27310", 5329, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27304", 5326, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27307", 5235, 28)
+      {
+       Outlier("General", 0.05);
+      };
+      Interval("S3 Column 2 Interval");
+     };
+     Boundary("End S3 Column 2");
+    };
+    Sequence("S3 Column 4")
+    {
+     Boundary("Start S3 Column 4");
+     Sequence("S3 C_4")
+     {
+      R_Date("GrN-7042", 5295, 40)
+      {
+       Outlier("IA", 1);
+      };
+      R_Date("GrN-7044", 5310, 50)
+      {
+       Outlier("IA", 1);
+      };
+      R_Date("GrN-7043", 5375, 40)
+      {
+       Outlier("IA", 1);
+      };
+      Interval("S3 Column 4_Interval");
+     };
+     Boundary("End S3 Column 4");
+    };
+    R_Date("GrM-27305", 5297, 26)
+    {
+     Outlier("General", 0.05);
+    };
+    Sum("S3 Find Layer Sum")
+    {
+    };
+    Interval("S3 Find Layer");
+    Span("Span S3 Find Layer");
+   };
+   Boundary("End S3 Find Layer");
+  };
+ }; 
