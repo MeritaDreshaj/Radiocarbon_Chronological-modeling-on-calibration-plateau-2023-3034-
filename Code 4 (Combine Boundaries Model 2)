@@ -1,0 +1,33 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Date(Prior("Start_S4_Layer_2_Model_2",Start_S4_Layer_2_Model_2.prior););
+  Date(Prior("End_S4_Layer_2_Model_2",End_S4_Layer_2_Model_2.prior););
+  Combine("Start S4 Layer 5")
+  {
+   Date(Prior("Start_S4_Column_1_Model_2",Start_S4_Column_1_Model_2.prior););
+   Prior("Start_S4_Column_2_Model_2",Start_S4_Column_2_Model_2.prior);
+   Date(Prior("Start_S4_Column_3_Model_2",Start_S4_Column_3_Model_2.prior););
+  };
+  Combine("End S4 Layer 5")
+  {
+   Date(Prior("End_S4_Column_1_Model_2",End_S4_Column_1_Model_2.prior););
+   Date(Prior("End_S4_Column_2_Model_2",End_S4_Column_2_Model_2.prior););
+   Date(Prior("End_S4_Column_3_Model_2",End_S4_Column_3_Model_1.prior););
+  };
+  Combine("Start S3 Find Layer")
+  {
+   Date(Prior("Start_S3_Column_1_Model_2",Start_S3_Column_1_Model_2.prior););
+   Date(Prior("Start_S3_Column_2_Model_2",Start_S3_Column_2_Model_2.prior););
+   Date(Prior("Start_S3_Column_4_Model_2",Start_S3_Column_4_Model_2.prior););
+  };
+  Combine("End S3 Find Layer")
+  {
+   Date(Prior("End_S3_Column_1_Model_2",End_S3_Column_1_Model_2.prior);)
+   Date(Prior("End_S3_Column_2_Model_2",End_S3_Column_2_Model_2.prior););
+   Date(Prior("End_S3_Column_4_Model_2",End_S3_Column_4_Model_2.prior););
+  };
+ };
