@@ -1,0 +1,30 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Combine("End S3")
+  {
+   Date(Prior("End_S3_Column_1",End_S3_Column_1.prior););
+   Date(Prior("End_S3_Column_2",End_S3_Column_2.prior););
+  };
+  Combine("Start S3")
+  {
+   Date(Prior("Start_S3_Column_1",Start_S3_Column_1.prior););
+   Date(Prior("Start_S3_Column_2",Start_S3_Column_2.prior););
+  };
+  Combine("End S4")
+  {
+   Date(Prior("End_S4_Column_1",End_S4_Column_1.prior););
+   Date(Prior("End_S4_Column_2",End_S4_Column_2.prior););
+   Date(Prior("End_S4_Column_3",End_S4_Column_3.prior););
+  };
+  Combine("Start S4")
+  {
+   Date(Prior("Start_S4_Column_1",Start_S4_Column_1.prior););
+   Date(Prior("Start_S4_Column_2",Start_S4_Column_2.prior););
+   Date(Prior("Start_S4_Column_3",Start_S4_Column_3.prior););
+  };
+ };
+ 
