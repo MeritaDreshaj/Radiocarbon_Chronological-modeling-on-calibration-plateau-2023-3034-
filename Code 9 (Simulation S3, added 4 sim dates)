@@ -1,0 +1,93 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Sequence()
+  {
+   Boundary("Start S3 Find Layer");
+   Phase("S3 Find Layer")
+   {
+    Sequence("S3_Column_1")
+    {
+     Boundary("Start S3_Column_1");
+     Sequence("Column 1_")
+     {
+      R_Date("GrM-27298", 5300, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27300", 5213, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27306", 5272, 28)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27308", 5247, 26)
+      {
+       Outlier("General", 0.05);
+      };
+     };
+     Boundary("End S3_Column_1");
+    };
+    Sequence("S3_Column_2")
+    {
+     Boundary("Start S3_Column_2");
+     Sequence("Column 2_")
+     {
+      R_Simulate("A", -4200, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27310", 5329, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27304", 5326, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Date("GrM-27307", 5235, 28)
+      {
+       Outlier("General", 0.05);
+      };
+     };
+     Boundary("End S3_Column_2");
+    };
+    Sequence("S3_Column_3")
+    {
+     Boundary("Start S3_Column_3");
+     Sequence("Column 3_")
+     {
+      R_Date("GrM-27305", 5297, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Simulate("B", -4220, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Simulate("C", -4160, 26)
+      {
+       Outlier("General", 0.05);
+      };
+      R_Simulate("D", -4100, 26)
+      {
+       Outlier("General", 0.05);
+      };
+     };
+     Boundary("End S3_Column_3");
+    };
+    Interval(" Find Layer");
+    Sum("Sum Find Layer")
+    {
+    };
+   };
+   Boundary("End S3 Find Layer");
+  };
+ };
+ 
